@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Assigment-3</title>
+	 <style>
+	 .profile{
+	 	/*set text color black*/
+      color: black;
+		}
+	body{
+    /*set background color f0f8ff and align item center */
+      background-color: #f0f8ff;
+      text-align: center;
+      
+
+    }
+    table{
+    	/*use margin auto to set the table comes to the center of the body as we use center property in body*/
+    	margin: auto;
+    }
+         td {
+            padding: 8px;
+            width: 150px;
+            height: 150px;
+            background-color: #fff;
+            cursor: pointer;
+         }
+         td img{
+         	width: 100%;
+         	height: 100%;
+         	object-fit: fit;
+         }
+      </style>
+</head>
+<body>
+	<div class="profile">
+  	<hr>
+  	<h2> Well come to my shop page </h2>
+  	 <p><b>Name: </b>Pariyar Anjali<br>
+  	    <b>Student Id: </b>M22W0186<br>
+        <b>Subject:</b> Web Programming 2<br>
+  	</p>	
+  	 <hr>
+  </div>
+   
+    <!-- using table to create image gallery -->
+      <table>
+         
+       
+         <tr>
+         	<!-- use image_open funtion when someone click on image and pass image soruce as an funtion argument. -->
+            <td><img class="image" src="img/1.png" onclick="image_open(src)"></td>
+            <td><img class="image" src="img/2.png" onclick="image_open(src)"></td>
+            
+         </tr>
+          <tr>
+            <td><img class="image" src="img/3.png" onclick="image_open(src)"></td>
+            <td><img class="image" src="img/4.png" onclick="image_open(src)"></td>
+            
+         </tr>
+          <tr>
+            <td><img class="image" src="img/5.png" onclick="image_open(src)"></td>
+            <td><img class="image" src="img/6.png" onclick="image_open(src)"></td>
+            
+         </tr>
+       
+      </table>
+
+      <script type="text/javascript">
+      	// run the funtion image_open and use window.opne() to open the image in new folder
+      	  function image_open(src){
+      	  	
+      	  	window.open(src);
+      	  }
+      </script>
+
+</body>
+</html>
